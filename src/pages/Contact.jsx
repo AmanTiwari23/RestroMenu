@@ -27,10 +27,11 @@ const Contact = () => {
           Visit us or order online to enjoy delicious, hygienic, and expertly
           prepared Indian food. Cook Menu – where taste meets trust!
           <br></br>
+          </p>
           <p className=" flex mt-10 mx-auto items-center justify-center">
             Let’s stay connected for a flavorful experience! 🍽️
           </p>
-        </p>
+        
       </Box>
       <Box
         sx={{
