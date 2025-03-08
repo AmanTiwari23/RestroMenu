@@ -9,7 +9,7 @@ const Menu = () => {
       <Box className="flex flex-wrap gap-4 justify-center">
         {MenuList.map((menu, index) => (
           <MenuCard
-            key={index}
+            key={menu.name}
             name={menu.name}
             image={menu.image}
             price={menu.Price}
