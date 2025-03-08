@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const MenuCard = ({ name, image, price }) => {
+export const MenuCard = ({ name, image, price }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const toggleFullScreen = () => {
@@ -50,4 +50,3 @@ const MenuCard = ({ name, image, price }) => {
   );
 };
 
-export default MenuCard;
