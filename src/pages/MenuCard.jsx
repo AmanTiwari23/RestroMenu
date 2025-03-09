@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 
-export const MenuCard = ({ name, image, price }) => {
+
+ const MenuCard = ({ name, image, price }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const toggleFullScreen = () => {
@@ -18,6 +19,7 @@ export const MenuCard = ({ name, image, price }) => {
   };
 
   return (
+    
     <div className="relative p-4 border rounded-lg shadow-lg bg-white max-w-sm w-full sm:max-w-md">
       <h2 className="text-lg sm:text-xl font-semibold mb-2">{name}</h2>
       <p className="text-gray-500 mb-2">Price : {price}</p>
@@ -47,6 +49,9 @@ export const MenuCard = ({ name, image, price }) => {
         ⬇ Download
       </button>
     </div>
+    
   );
 };
+
+export default MenuCard;
 
