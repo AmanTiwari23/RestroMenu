@@ -6,14 +6,14 @@ const Footer = () => {
   return (
     <>
       <Box
-        className="bg-gray-600 text-white"
-        sx={{ textAlign: "center", p: 2 }}
+        className=" bg-[#232427] text-white"
+        sx={{ textAlign: "center", p: 1 }}
       >
         <Box
           sx={{
             textAlign: "center",
             justifyContent: "center",
-            "& svg": { fontSize: "40px" },
+            "& svg": { fontSize: "30px" },
             "& svg:hover": {
               color: "green",
               transform: "translateX(5px)",

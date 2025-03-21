@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -21,17 +21,17 @@ const Header = () => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" , backgroundColor:"#232427" , height:"100vh"}}>
       <Typography
         variant="h6"
         component="div"
         className="flex flex-grow items-center gap-2 border border-black text-xl text-black font-bold m-1"
       >
         <img className="h-16 w-16 rounded-lg" src={logo} />
-        YumYum Food
+        <p className="text-white">YumYum Food</p>
       </Typography>
       <Divider />
-      <ul className="text-xl text-black ">
+      <ul className="text-xl text-white  ">
         <li className="mt-2  p-2 shadow-lg">
           <Link to={"/"}> Home</Link>
         </li>
@@ -49,8 +49,8 @@ const Header = () => {
   );
   return (
     <>
-      <Box>
-        <AppBar component={"nav"} sx={{ bgcolor: "orange" }}>
+      <Box className="bg-[#232427]">
+        <AppBar component={"nav"} sx={{ bgcolor: "#232427" }}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -96,6 +96,7 @@ const Header = () => {
             open={mobileOpen}
             onClose={handleDrawerToggle}
             sx={{
+            
               display: { xs: "block", sm: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
@@ -115,3 +116,4 @@ const Header = () => {
 };
 
 export default Header;
+

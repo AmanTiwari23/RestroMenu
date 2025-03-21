@@ -1,79 +1,170 @@
-import React from "react"
-import { MenuList } from "../assets/data/Data";
-import Layout from "../components/Layout";
-import { Box } from "@mui/material";
-import { useState } from "react";
+// import { useState } from "react";
+// import { menuData } from "../assets/data/Data";
+// import Layout from "../components/Layout";
 
-const MenuCard = ({ name, image, price }) => {
-  const [isFullScreen, setIsFullScreen] = useState(false);
-  
-    const toggleFullScreen = () => {
-      setIsFullScreen(!isFullScreen);
-    };
-  
-    const handleDownload = () => {
-      const link = document.createElement("a");
-      link.href = image;
-      link.download = name;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
-  
-    return (
-      <div className="relative p-4 border rounded-lg shadow-lg bg-white max-w-sm w-full sm:max-w-md">
-        <h2 className="text-lg sm:text-xl font-semibold mb-2">{name}</h2>
-        <p className="text-gray-500 mb-2">Price : {price}</p>
-        <div
-          className={`relative cursor-pointer overflow-hidden rounded-lg ${
-            isFullScreen
-              ? "fixed inset-0 bg-black flex justify-center items-center"
-              : ""
-          }`}
-          onClick={toggleFullScreen}
-        >
-          <img
-            src={image}
-            alt={name}
-            className={`w-full h-64 sm:h-80 transition-transform duration-300 rounded-lg ${
-              isFullScreen ? "w-screen h-screen object-contain" : ""
-            }`}
-          />
-          {isFullScreen && (
-            <button
-              className="absolute top-4 right-4 text-white bg-black p-2 rounded-full"
-              onClick={toggleFullScreen}
-            >
-              ✕
-            </button>
-          )}
-        </div>
-        <button
-          onClick={handleDownload}
-          className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
-        >
-          ⬇ Download
-        </button>
-      </div>
-    );
+// export default function Menu() {
+//   const [expandedSections, setExpandedSections] = useState({});
+//   const [selectedImage, setSelectedImage] = useState(null);
+
+//   const toggleSection = (section) => {
+//     setExpandedSections((prev) => ({
+//       ...prev,
+//       [section]: !prev[section],
+//     }));
+//   };
+
+//   return (
+//     <Layout>
+      
+//     <div className="min-h-screen bg-gradient-to-b from-blue-500 to-purple-700 p-4">
+//       <div className="max-w-4xl mx-auto">
+//         <h1 className="text-2xl sm:text-3xl font-bold text-center text-white mb-6">🍽️ Yum Yum Food Menu</h1>
+
+//         {menuData.map((category) => (
+//           <div key={category.section} className="mb-6">
+//             {/* Accordion Button */}
+//             <button
+//               onClick={() => toggleSection(category.section)}
+//               className="w-full text-left text-lg sm:text-xl font-semibold bg-gray-200 p-3 rounded-lg flex justify-between"
+//             >
+//               {category.section} {expandedSections[category.section] ? "▲" : "▼"}
+//             </button>
+
+//             {/* Dish Grid */}
+//             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-3">
+//               {(expandedSections[category.section]
+//                 ? category.dishes
+//                 : category.dishes.slice(0, 5)
+//               ).map((dish) => (
+//                 <div
+//                   key={dish.id}
+//                   className="cursor-pointer bg-gradient-to-r from-pink-400 to-purple-500 shadow-lg rounded-lg p-3 border border-gray-300 transition-transform duration-300 hover:scale-105"
+//                   onClick={() => setSelectedImage(dish.image)}
+//                 >
+//                   <img
+//                     src={dish.image}
+//                     alt={dish.name}
+//                     className="w-full h-24 sm:h-32 object-cover rounded-md shadow-md"
+//                   />
+//                   <h3 className="text-md sm:text-lg font-semibold mt-2 text-white">{dish.name}</h3>
+//                   <p className="text-gray-100 text-sm">{dish.price}</p>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         ))}
+
+//         {/* Full-Screen Image Modal */}
+//         {selectedImage && (
+//           <div
+//             className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
+//             onClick={() => setSelectedImage(null)}
+//           >
+//             <div className="relative p-4">
+//               <button
+//                 className="absolute top-2 right-2 text-white text-3xl font-bold"
+//                 onClick={() => setSelectedImage(null)}
+//               >
+//                 ✖
+//               </button>
+//               <img
+//                 src={selectedImage}
+//                 alt="Full Screen Dish"
+//                 className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
+//               />
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </div>
+   
+//      </Layout>
+//   );
+// }
+
+
+import { useState } from "react";
+import { menuData } from "../assets/data/Data";
+import Layout from "../components/Layout";
+
+export default function Menu() {
+  const [expandedSections, setExpandedSections] = useState({});
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const toggleSection = (section) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
   };
 
-const Menu = () => {
   return (
     <Layout>
-      <Box className="flex flex-wrap gap-4 justify-center">
-        {MenuList.map((menu, index) => (
-          <MenuCard
-          key={menu.name}
-          image={menu.image}
-          price={menu.Price}
-          name={menu.name}
-      
-          />
-        ))}
-      </Box>
-      </Layout>
-  );
-};
+      <div className="min-h-screen bg-gray-100 p-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-6">
+            🍽️ Yum Yum Food Menu
+          </h1>
 
-export default Menu;
+          {menuData.map((category) => (
+            <div key={category.section} className="mb-6">
+              <button
+                onClick={() => toggleSection(category.section)}
+                className="w-full text-left text-lg sm:text-xl font-semibold bg-gray-200 text-gray-800 p-3 rounded-lg flex justify-between hover:bg-gray-300 transition"
+              >
+                {category.section} {expandedSections[category.section] ? "▲" : "▼"}
+              </button>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-3">
+                {(expandedSections[category.section]
+                  ? category.dishes
+                  : category.dishes.slice(0, 5)
+                ).map((dish) => (
+                  <div
+                    key={dish.id}
+                    className="cursor-pointer bg-white shadow-md rounded-lg border border-gray-300 transition-transform duration-300 hover:scale-105"
+                    onClick={() => setSelectedImage(dish.image)}
+                  >
+                    <img
+                      src={dish.image}
+                      alt={dish.name}
+                      className="w-full h-32 object-cover rounded-t-lg"
+                    />
+                    <div className="p-2">
+                      <h3 className="text-md sm:text-lg font-semibold text-gray-800">
+                        {dish.name}
+                      </h3>
+                      <p className="text-gray-600 text-sm">{dish.price}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {selectedImage && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
+              onClick={() => setSelectedImage(null)}
+            >
+              <div className="relative p-4">
+                <button
+                  className="absolute top-2 right-2 text-white text-3xl font-bold"
+                  onClick={() => setSelectedImage(null)}
+                >
+                  ✖
+                </button>
+                <img
+                  src={selectedImage}
+                  alt="Full Screen Dish"
+                  className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </Layout>
+  );
+}
+
