@@ -86,7 +86,7 @@ import ZeeraNaan from "../data/Roti Naan/Zeera Naan.jpg"
 
 import ButterScotch from "../data/Ice Creams/Butter Scotch.jpg"
 import ChoclateIcecream from "../data/Ice Creams/Choclate Ice cream.jpg"
-import Mango from "../data/Ice Creams/mango ice cream.jpg"
+// import Mango from "../data/Ice Creams/mango ice cream.jpg"
 import Strawberry from "../data/Ice Creams/Strawberry Ice cream.jpg"
 import Vanilla from "../data/Ice Creams/vanilla ice cream.jpg"
 
@@ -278,7 +278,7 @@ export const menuData = [
     dishes: [
       { id: 1, name: "Butter Scotch", image:ButterScotch},
       { id: 2, name: "Choclate Icecream", image:ChoclateIcecream },
-      { id: 3, name: "Mango", image:Mango},
+      // { id: 3, name: "Mango", image:Mango},
       { id: 4, name: "Strawberry", image:Strawberry },
       { id: 5, name: "Vanila", image:Vanilla },
     ],
