@@ -118,7 +118,7 @@ import KajuBarfi from "../assets/data/Sweets/Kaju Barfi.jpg"
 import kalakand from "../assets/data/Sweets/kalakand.jpg"
 import KhoyaPakija from "../assets/data/Sweets/Khoya Pakija.jpg"
 import KhoyaRoll from "../assets/data/Sweets/Khoya Roll.jpg"
-import LalPeda from "../assets/data/Sweets/Lal Peda.jpg"
+// import LalPeda from "../assets/data/Sweets/Lal Peda.jpg"
 import MathuraPeda from "../assets/data/Sweets/Mathura Peda.jpg"
 import Milkcake from "../assets/data/Sweets/Milk cake.jpg"
 import PaanPetha from "../assets/data/Sweets/Paan Petha.jpg"
@@ -318,7 +318,7 @@ import Safedpeda from "../assets/data/Sweets/Safed peda.jpg"
       { id: 13, name: "kalakand", image:kalakand },
       { id: 14, name: "Khoya Pakija", image:KhoyaPakija },
       { id: 15, name: "Khoya Roll", image:KhoyaRoll },
-      { id: 16, name: "Lal Peda", image:LalPeda },
+      // { id: 16, name: "Lal Peda", image:LalPeda },
       { id: 17, name: "Mathura Peda", image:MathuraPeda },
        { id: 18, name: "Milkcake", image:Milkcake},
         { id: 19, name: "Mathura Peda", image:MathuraPeda },
