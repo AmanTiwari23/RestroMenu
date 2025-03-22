@@ -50,44 +50,44 @@ import PalakPaneer from "../data/Paneer Specail/Palak Paneer.jpg";
 import PaneerButterMasala from "../data/Paneer Specail/Paneer Butter Masala.jpg";
 import ShahiPaneer from "../data/Paneer Specail/Shahi Paneer.jpg";
 
-import AlooBaigan from "../data/Vegiies/Aloo Baigan.jpg"
-import AlooGobi from "../data/Vegiies/Aloo Gobi.jpg"
-import AlooMethi from "../data/Vegiies/Aloo Methi.jpg"
-import BaiganMasala from "../data/Vegiies/Baigan Masala.jpg"
-import BhindiMasala from "../data/Vegiies/Bhindi Masala.jpg"
-import KajuBhendi from "../data/Vegiies/Kaju Bhendi.jpg"
-import MixedVegetableBhuna from "../data/Vegiies/Mixed Vegetable Bhuna.jpg"
-import MixedVegetableDry from "../data/Vegiies/Mixed Vegetable Dry.jpg"
-import MixedVegetableKofta from "../data/Vegiies/Mixed Vegetable Kofta.jpg"
-import MushroomMasala from "../data/Vegiies/Mushroom Masala.jpg"
-import NavratanVegKoorma from "../data/Vegiies/Navratan Veg Koorma.jpg"
-import Salad from "../data/Vegiies/Salad.jpg"
+import AlooBaigan from "./Vegiies/Aloo Baigan.jpg"
+import AlooGobi from "./Vegiies/Aloo Gobi.jpg"
+import AlooMethi from "./Vegiies/Aloo Methi.jpg"
+import BaiganMasala from "./Vegiies/Baigan Masala.jpg"
+import BhindiMasala from "./Vegiies/Bhindi Masala.jpg"
+import KajuBhendi from "./Vegiies/Kaju Bhendi.jpg"
+import MixedVegetableBhuna from "./Vegiies/Mixed Vegetable Bhuna.jpg"
+import MixedVegetableDry from "./Vegiies/Mixed Vegetable Dry.jpg"
+import MixedVegetableKofta from "./Vegiies/Mixed Vegetable Kofta.jpg"
+import MushroomMasala from "./Vegiies/Mushroom Masala.jpg"
+import NavratanVegKoorma from "./Vegiies/Navratan Veg Koorma.jpg"
+import Salad from "./Vegiies/Salad.jpg"
 
-import ChanaMasala from "../data/Daal/Chaana Masala.jpg"
-import Chanadal from "../data/Daal/Chana dal.jpg"
-import DalMakhani from "../data/Daal/Dal Makhani.jpg"
-import TadkaDal from "../data/Daal/Tadka Dal.jpg"
+import ChanaMasala from "./Daal/Chaana Masala.jpg"
+import Chanadal from "./Daal/Chana dal.jpg"
+import DalMakhani from "./Daal/Dal Makhani.jpg"
+import TadkaDal from "./Daal/Tadka Dal.jpg"
 
-import BasmatiRice from "../data/Rice/Basmati Rice.jpg"
-import ChanaPilau from "../data/Rice/Chana Pilau.jpg"
-import MatarPulao from "../data/Rice/Matar Pulao.jpg"
-import PullaoRice from "../data/Rice/Pulao Rice.jpg"
-import VegetableBiryani from "../data/Rice/Vegetable Biryani.jpg"
+import BasmatiRice from "./Rice/Basmati Rice.jpg"
+import ChanaPilau from "./Rice/Chana Pilau.jpg"
+import MatarPulao from "./Rice/Matar Pulao.jpg"
+import PullaoRice from "./Rice/Pulao Rice.jpg"
+import VegetableBiryani from "./Rice/Vegetable Biryani.jpg"
 
-import GarlicNaan from "../data/Roti Naan/Garlic Naan.jpg"
-import Paratha from "../data/Roti Naan/Paratha.jpg"
-import PitaBread from "../data/Roti Naan/Pita Bread.jpg"
-import PlainNaan from "../data/Roti Naan/Plain Naan.jpg"
-import Pulka from "../data/Roti Naan/Pulka.jpg"
-import Puri from "../data/Roti Naan/Puri.jpg"
-import RumaliRoti from "../data/Roti Naan/Rumali Roti.jpg"
-import TurkishBread from "../data/Roti Naan/Turkish Bread.jpg"
-import ZeeraNaan from "../data/Roti Naan/Zeera Naan.jpg"
+import GarlicNaan from "./Roti Naan/Garlic Naan.jpg"
+import Paratha from "./Roti Naan/Paratha.jpg"
+import PitaBread from "./Roti Naan/Pita Bread.jpg"
+import PlainNaan from "./Roti Naan/Plain Naan.jpg"
+import Pulka from "./Roti Naan/Pulka.jpg"
+import Puri from "./Roti Naan/Puri.jpg"
+import RumaliRoti from "./Roti Naan/Rumali Roti.jpg"
+import TurkishBread from "./Roti Naan/Turkish Bread.jpg"
+import ZeeraNaan from "./Roti Naan/Zeera Naan.jpg"
 
 import ButterScotch from "./Ice Creams/Butter Scotch.jpg"
 import ChoclateIcecream from "./Ice Creams/Choclate Ice cream.jpg"
 import Strawberry from "./Ice Creams/Strawberry Ice cream.jpg"
-import Vanilla from "./Ice Creams/vanilla Ice cream.jpg"
+// import Vanilla from "./Ice Creams/vanilla Ice cream.jpg"
 import mango from "./Ice Creams/mango Ice cream.jpg"
 
 import CusterdCake from "../data/Dessert/Custerd Cake.jpg"
@@ -280,7 +280,7 @@ export const menuData = [
       { id: 2, name: "Choclate Icecream", image:ChoclateIcecream },
       { id: 3, name: "Mango ice cream", image:mango },
       { id: 4, name: "Strawberry", image:Strawberry },
-      { id: 5, name: "Vanila", image:Vanilla },
+      // { id: 5, name: "Vanila", image:Vanilla },
     ],
   },
   {
