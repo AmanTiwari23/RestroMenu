@@ -127,6 +127,15 @@ import PlainBurfi from "../assets/data/Sweets/Plain Burfi.jpg"
 import Rabadi from "../assets/data/Sweets/Rabadi.jpg"
 import Safedpeda from "../assets/data/Sweets/Safed peda.jpg"
 
+import Coffee from "../assets/data/After/Coffee.jpg"
+import FruitDisplay from "../assets/data/After/Fruit Display.jpg"
+import Paan from "../assets/data/After/Paan.jpg"
+import Tea from "../assets/data/After/Tea.jpg"
+
+
+// import ChikenSandwich from "../assets/data/Nonveg Dishes/Chiken grilled Sandwich.jpg"
+// import Chikenlolipop from "../assets/data/Nonveg Dishes/Chiken Lollipop.jpg"
+
 
 
 
@@ -329,6 +338,31 @@ import Safedpeda from "../assets/data/Sweets/Safed peda.jpg"
              { id: 24, name: "Safed peda", image:Safedpeda },
     ],
   },
+  // {
+  //   section: "Nonveg Dishes",
+  //   dishes: [
+  //     { id: 1, name: "Chiken Sandwich", image:ChikenSandwich},
+  //     { id: 2, name: "Chiken lolipop", image:Chikenlolipop },
+  //     { id: 3, name: "Fruit Salad", image:FruitSalad},
+  //     { id: 4, name: "Fruit Skewers", image:FruitSkewers },
+  //     { id: 5, name: "Gajar Halwa", image:GajarHalwa },
+  //     { id: 6, name: "Gulab Jamun", image:GulabJamun },
+  //     { id: 7, name: "Jalebi", image:Jalebi },
+  //     { id: 8, name: "Rashmalai", image:Rashmalai }
+  //   ],
+  // },
+  {
+      section: "After",
+      dishes: [
+        { id: 1, name: "Coffee", image:Coffee},
+        { id: 2, name: "Tea", image: Tea},
+        { id: 3, name: "Fruit Display", image:FruitDisplay},
+        { id: 4, name: "Paan", image:Paan },
+        
+      ],
+    },
+
+
 ];
 
 export default function Menu() {
